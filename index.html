@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Index page</title>
+    <style>
+    .top ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 12px;
+        padding: 0;
+    }
+    .top a,
+    .top a:link,
+    .top a:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        border: solid 3px;
+        border-radius: 7px;
+        padding: 5px;
+        text-align: center;
+        color: red;
+        font-weight: bold;
+        transition: .35s;
+    }
+
+    .top a[href="#"] {
+        background: rgb(15, 90, 252);
+        border: rgb(15, 90, 252);
+        color: #fff;
+    }
+
+    .top a:hover {
+        background: red;
+        color: #fff;
+        border: solid 3px red;
+    }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="top">
+            <ul>
+                <li><a href="#">page 1</a></li>
+                <li><a href="page2.html">page 2</a></li>
+                <li><a href="page3.html">page 3</a></li>
+                <li><a href="page4.html">page 4</a></li>
+                <li><a href="page5.html">page 5</a></li>
+                <li><a href="page6.html">page 6</a></li>
+            </ul>
+        </nav>
+
+        <p>See also: <a href="LearnWebCode.html">Learn Web Code example</a> and the <a href="README.md">README.md</a> for a list of resources.</p>
+        <h1>Hellow Worldy</h1>
+
+        <h2>Node JS</h2>
+        <p>Node is the Javascript engine from the Chrome browser wrapped in C++. From a terminal you can type
+            <code>Node my-js-file.js</code> and Node will run the program.</p>
+
+        <h2>Primatives and Reference Types</h2>
+        <section class="definitions">
+            <div class="primatives">
+                <h3>Primatives / Value types</h3>
+                <ul>
+                    <li>String</li>
+                    <li>Number</li>
+                    <li>Boolean</li>
+                    <li>Undefined</li>
+                    <li>Null</li>
+                </ul>
+            </div>
+            <div class="reference">
+                <h3>Reference types</h3>
+                <ul>
+                    <li>Object</li>
+                    <li>Array</li>
+                    <li>Function</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <h2>These are Primatives</h2>
+        <pre>
+let name = 'Cyamodus'; // String literal
+let surname = 'Smithy'
+let age = '30';         // Number literal
+let isApproved = 'true';    // Boolean literal
+let firstName = 'undefined';  // not used very often
+let selectedColor = 'null';     // When the user hasn't chosen a color
+
+console.log(name);
+
+const interestRate = '0.3'; // a contant
+console.log(interestRate);
+    </pre>
+
+        <h2>Objects</h2>
+        <section class="coding">
+            <div class="desc">
+                <p>An object is like an object in real life. It has properties and values. A person for example has a
+                    name, age, hair color etc. Each of these properties has a value: Bob, 31, Ginger etc.</p>
+                <p>NB. In an object the property:value pairs are separated by commas not semi-colons.</p>
+            </div>
+            <div class="thecode">
+let person = {
+name: 'Cyamodus',
+age: 147,
+hairColor: bald
+}
+            </div>
+            <div class="desc">
+                <p>If you want to use just one property from an object you can use a .</p>
+
+            </div>
+            <div class="thecode">
+console.log(person.age);
+            </div>
+
+        </section>
+
+        <h2>Arrays</h2>
+        <p>An array is a list of objects but an array is also an object itself.</p>
+
+        <p>An array can be a collection of string variables. The syntax is to use the <code>var myName =</code> like a variable but then list different values followed by a comma separated list inside square brackets.</p>
+
+        <p><code>var turd = ['brown', 'slippery', 'smelly']</code></p>
+
+        <p>You can also nest arrays inside each other:</p>
+
+        <p><code>var farmAnimals = [['pigs', 127], ['cows', 472], ['chickens', 23]]</code></p>
+
+
+        <h2>Functions</h2>
+        <p>Functions perform tasks or do calculations.</p>
+
+        <p>The syntax is first declare a function: <code>function</code></p>
+
+        <p>Then give it a name followed by brackets: <code>function greet ()</code></p>
+
+        <p>Next you add curly braces and inside here goes the <em>body</em> of the funcction</p>
+
+        <pre>
+function greet() {
+    console.log('Hello World');
+}
+        </pre>
+        <p>To call the function it's simply: <code>greet();</code></p>
+
+        <h3>Adding a parameter</h3>
+
+        <p>You can add parameter to this function. For instance you might want someone’s name instead of <em>World</em>. So “Hello John’ but where the name could vary. So you use the bracket and put in the variable: <code>function greet(name)</code></p>
+
+        <pre>
+            function greet (name) {
+                console.log('Hello ' + name);
+            }
+
+            greet('John');
+
+        </pre>
+
+        <p>The word 'John' above is an <em>argument</em> of the greet function. Whereas 'name' is a parameter of the greet function.</p>
+
+        <p>It's then easy to pass further arguments: <code>greet('Mary');</code></p>
+
+        <p>A function can have multiple parameters. These are written in the same brackets as the first but separated by commas. <code>function greet(name, lastName) {</code></p>
+
+            <p>So:</p>
+        <pre>
+function greet(name, lastName) {
+    console.log('Hello ' + name + '' + lastName)
+}
+        </pre>
+
+
+
+
+
+        <p>Gettig tricky: <a href="https://youtu.be/W6NZfCO5SIk?t=2384">Mosh vid on functions</a></p>
+    </div>
+    <script src="index.js"></script>
+    <script>
+    alert('Remember you can have EITHER a link OR a script in a script tag. NOT BOTH');
+    </script>
+</body>
+
+</html>

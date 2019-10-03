@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/hidemenu.js"></script>
+    <title>Page 2</title>
+</head>
+
+<body>
+    <nav id="topmenu">
+        <ul>
+            <li><a href="index.html">page 1</a></li>
+            <li><a href="page2.html">page 2</a></li>
+            <li><a href="page3.html">page 3</a></li>
+            <li><a href="page4.html">page 4</a></li>
+            <li><a href="page5.html">page 5</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="one">
+            <h1>Page 2</h1>
+
+            <p>This page is using the info on <a href="https://www.javascript.info">javascript.info</a></p>
+
+            <ol>
+                <li>The triple equals symbol: === means equals. If two numbers are equal this is the sign.</li>
+                <li>Code between curly braces is called a <em>block</em>.
+                </li>
+                <li>
+                    <pre>if 10 &lt; 5 {
+    // run some code here
+}</pre>
+                    <p>This would not run the code because 10 is not less than 5.</p>
+                </li>
+                <li>Another variation of the <code>if</code> is the <code>if / else</code>.
+                    <pre>
+if (43 < 2) {
+    // Run the code in here
+} else {
+    // Run a different bit of code
+}      </pre>
+                </li>
+                <li>
+                    <h2>Embedding variables into a a string</h2>
+                    <p>Usually you can only have a string of text between it's open and closing quotes. However you can
+                        add a variable if you use backticks instead of quotes<p>
+                            <pre>
+let name = "John";
+
+// embed a variable
+alert( `Hello, ${name}!` );
+</pre>
+                </li>
+                <li>
+                    <h2>Using Replace</h2>
+                    <p>Replace is a function can be used to replace any string or part of a string. Type this into the
+                        console.</p>
+                    <pre>
+let insult = 'u fuckin wanker';
+
+insult.replace('wanker', 'arsehole');
+
+u fuckin arsehole
+            </pre>
+                </li>
+                <li></li>
+            </ol>
+
+
+        </section>
+    </div>
+
+    <script>
+
+        let name = 'John';
+        let admin;
+        alert(admin);
+    </script>
+
+</body>
+
+</html>

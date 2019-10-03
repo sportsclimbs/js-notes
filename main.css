@@ -1,0 +1,112 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --linkColor: rgb(236, 58, 4);
+}
+
+body {
+    font-size: 20px;
+    font-family: 'segoe ui';
+    color: #fff;
+    background: rgb(15, 55, 66);
+
+    padding: 0;
+    margin: 0;
+
+}
+.container {
+    padding-top: 30px;
+    margin: 2em;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+h2 {
+    margin-top: 2em;
+    border-bottom: solid 1px #aaa;
+}
+
+nav#topmenu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: top .5s;
+    background: rgba(8, 28, 34, .7)
+}
+
+nav#topmenu>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: .5em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav#topmenu li {
+    /* flex: 1; */
+    flex-basis: 9%;
+}
+
+nav#topmenu a {
+    display: block;
+    padding: .3em 2em;
+    margin-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    /* background: #111; */
+    border: solid var(--linkColor) 2px;
+    border-radius: 5px;
+    transition: .4s;
+}
+nav#topmenu a:hover {
+    background: var(--linkColor);
+    color: white;
+
+}
+
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+pre,
+code {
+    background: var(--linkColor);
+}
+pre {
+    padding: .3em;
+    font-size: .85em;
+}
+
+.one {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.one>ol>li {
+    margin-bottom: 1em;
+}
+
+
+
+/* PAGES only in the body tag */
+
+.p3 #content {
+    display: none;
+    border: solid 2px #fff;
+    padding: 1em;
+    border-radius: 18px;
+    width: 55%;
+}
+
+.p3 #content :first-child {
+    margin-top: 0;
+}
+
