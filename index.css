@@ -39,3 +39,37 @@ pre {
     background: rgba(111,111,111,.1);
     padding: 1em
 }
+
+.top ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 12px;
+    padding: 0;
+}
+.top a,
+.top a:link,
+.top a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    border: solid 3px;
+    border-radius: 7px;
+    padding: 5px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    transition: .35s;
+}
+
+.top a[href="#"] {
+    background: rgb(15, 90, 252);
+    border: solid 3px rgb(15, 90, 252);
+    color: #fff;
+}
+
+.top a:hover {
+    background: red;
+    color: #fff;
+    border: solid 3px red;
+}
