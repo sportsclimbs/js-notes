@@ -62,10 +62,12 @@ pre {
     transition: .35s;
 }
 
-.top a[href="#"] {
+.top a[href="#"],
+.top a[href="#"]:hover {
     background: rgb(15, 90, 252);
     border: solid 3px rgb(15, 90, 252);
     color: #fff;
+    cursor: default;
 }
 
 .top a:hover {
