@@ -25,9 +25,19 @@ h1 {
     font-size: 3.5em;
     margin: 0;
 }
+
 h2 {
     margin-top: 2em;
-    border-bottom: solid 1px #aaa;
+    margin-bottom: 0;
+}
+h3 {
+    margin-top: 1.6em;
+    margin-bottom: 0;
+}
+
+h3 ~ p,
+h2 ~ p {
+    margin-top: 0.5em;
 }
 
 nav#topmenu {
@@ -49,12 +59,12 @@ nav#topmenu>ul {
 
 nav#topmenu li {
     /* flex: 1; */
-    flex-basis: 9%;
+    flex-basis: 8.5%;
 }
 
 nav#topmenu a {
     display: grid;
-    padding: .3em 2em;
+    padding: .3em .2em;
     margin: auto;
     text-align: center;
     text-transform: uppercase;
@@ -67,11 +77,11 @@ nav#topmenu a:hover {
     background: var(--linkColor);
     color: white;
 }
-
 nav#topmenu a[href="#"] {
     background: var(--linkColor);
     color: #fff;
 }
+
 
 a,
 a:link,
@@ -85,19 +95,30 @@ code {
     background: var(--linkColor);
 }
 pre {
-    padding: .3em;
-    font-size: .85em;
-}
-
-.one {
-    max-width: 1200px;
-    margin: auto;
+    padding: 1em;
+    width: min-content;
+    /* display: inline-block; */
+    /* font-size: .85em; */
 }
 
 .one>ol>li {
     margin-bottom: 1em;
 }
 
+.buttondiv {
+    display: inline-block;
+    padding: 1em;
+    background: fuchsia;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: .5s;
+}
+.buttondiv:hover {
+    background: #fff;
+    color: fuchsia;
+    cursor: pointer;
+}
 
 
 /* PAGES only in the body tag */
@@ -114,3 +135,16 @@ pre {
     margin-top: 0;
 }
 
+.shoutout {
+    display: flex;
+}
+.shout {
+    /* display: flex; */
+    color: fuchsia;
+    border: solid 3px;
+    padding: 1em;
+    font-size: 1.6em;
+    max-width: 
+    /* width: min-content;
+    min-width: 100%; */
+}

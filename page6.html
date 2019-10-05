@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/hidemenu.js"></script>
-    <title>Page 5</title>
+    <title>Page 6</title>
+
 </head>
 
-<body>
+<body class="p6">
     <nav id="topmenu">
         <ul>
             <li><a href="index.html">page 1</a></li>
@@ -18,28 +19,107 @@
             <li><a href="page3.html">page 3</a></li>
             <li><a href="page4.html">page 4</a></li>
             <li><a href="page5.html">page 5</a></li>
-            <li><a href="page6.html">page 6</a></li>
+            <li><a href="#">page 6</a></li>
             <li><a href="page7.html">page 7</a></li>
             <li><a href="page8.html">page 8</a></li>
             <li><a href="page9.html">page 9</a></li>
             <li><a href="page10.html">page 10</a></li>
+            <li><a href="links.html">Links</a></li>
         </ul>
     </nav>
     <div class="container">
-        <section class="one">
-            <h1>Page 5.</h1>
+
+        <h1>Beginner’s Guide to Javascript</h1>
+
+        <div class="sub-h1">This is the <a href="https://www.youtube.com/watch?v=UOeofWla8mE">first video</a> by Guil
+            Hernandez</div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam vel corporis laboriosam rerum similique
+            reiciendis expedita veritatis.</p>
+
+        <div class="buttondiv" onclick="nameCheck();">Check in</div>
+        <div class="buttondiv" onclick="greet('hi there');">Greet me</div>
+
+        <div class="buttondiv" onclick="alert(person.name)">object alert name</div>
+        <div class="buttondiv" onclick="alert(person.age)">object alert age</div>
+        <p>REMEMBER the parentheses after the function name.</p>
+        <p>This didn't work at first. The error? forgot the quotes in the brackets.</p>
+
+        <pre class="language-js">
+function greet(greeting) {
+    let response = prompt('what yor name?');
+    alert(greeting + ", " + response + "!!");
+}
+
+greet('hi there');
+                    </pre>
 
 
+        <h2>Arrays</h2>
+        <p>A variable can only hold one value. This is where arrays come in.</p>
+
+        <p>An array is like a variable but with square brackets and  commer separated list of values.</p>
+
+        <p><code class="language-js">var warWords = ['fight', 'bombs', 'spitfire', 'chimpanzee', 'melons']</code></p>
+
+        <p><code>warWords</code></p>
+
+        <h2>Objects</h2>
+
+        <p>Almost everything in Javascript is either an <em>object</em> or can be treated as one.</p>
+
+        <p>Objects have properties and methods. Properties are like variables that belong to the object. Methods are something the object can do, or can be done to the object.</p>
+
+        <p>Example:</p>
+
+        <pre>var person = {
+            name: 'crap';
+            surname: 'Smith';
+            age: 32;
+            hair:  'brown';
+        };
+        </pre>
+
+        <p>To access a property of an object use dot notation:</p>
+
+        <p><code>alert(person.name)</code></p>
+
+        <h2>Loops</h2>
+
+        <p><code>warWords.forEach(function(warWord) {
+            alert(warWord);
+        })
+        </code></p>
+
+        <script>
+            function nameCheck() {
+                let response = prompt('what yor name?');
+                alert("Hello " + response + "!!");
+            }
+
+            function greet(greeting) {
+                let response = prompt('what yor name?');
+                alert(greeting + ", " + response + "!!");
+            }
+
+            var warWords = ['fight', 'bombs', 'spitfire', 'chimpanzee', 'melons'];
+
+            warWords.forEach(function(warWord) {
+            alert(warWord);
+        })
+
+        // object example
+
+        var person = {
+            name: 'crap',
+            surname: 'Smith',
+            age: 32,
+            hair:  'brown'
+        };
 
 
-
-        </section>
-    </div>
-
-    <script>
-
-    </script>
-
+        </script>
+        <script src="js/prism.js"></script>
 </body>
 
 </html>
