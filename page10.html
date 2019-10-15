@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/hidemenu.js"></script>
+    <script src="js/date.js" defer></script>
+    <title>Page 10</title>
+</head>
+
+<body>
+    <nav id="topmenu">
+        <ul>
+            <li><a href="index.html">page 1</a></li>
+            <li><a href="page2.html">page 2</a></li>
+            <li><a href="page3.html" title="Toggle switch">page 3</a></li>
+            <li><a href="page4.html">page 4</a></li>
+            <li><a href="page5.html" title="Nodes and the DOM">page 5</a></li>
+            <li><a href="page6.html" title="Arrays">page 6</a></li>
+            <li><a href="page7.html" title="Objects">page 7</a></li>
+            <li><a href="page8.html" title="Functions">page 8</a></li>
+            <li><a href="page9.html">page 9</a></li>
+            <li><a href="#">page 10</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="one">
+            <p id="modified"></p>
+
+            <h1>Page 10</h1>
+
+            <div class="shoutout">
+                <div class="shout"><strong>TIP</strong> from HTML All the Things:<br>Learn from making projects and just use tuts to support you making them.</div>
+            </div>
+
+            <h2>Project 1 - jS menu</h2>
+
+            <p>The idea is to keep the menu in one js file and have it written into one page. Then you can edit the menu and all pages will be updated simultaneously.</p>
+
+            <p>This is not hard to do:</p>
+
+            <p>In the js file use: <code>document.getElementById('topmenu').innerHTML =</code> followed by the string of code of the HTML menu. Here I’ve named the id of the element containing this menu <em>topmenu</em>.</p>
+
+            <p>Then add a script tag linking to this js file at the bottom of the page.</p>
+
+            <p>However a problem arises when you want a menu button to appear different to denote the current page. Using a CSS attribute selector like <code>a[href="#"]</code> requires the the hash symbol be written into the the corresponding menu item for the current page.</p>
+
+            <p>The page file name can be got like so:</p>
+
+            <pre>
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log( page );
+                </pre>
+
+                <p>See: <a href="https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript">Stack overflow</a></p>
+
+                <p>But what happens next? The kind of statement needs to run through the list of the menu's hrefs and if the page's filename equals the href of the menu item replace the namew with #.  </p>
+
+                <h2>Project 2 - displaying the page date</h2>
+
+                <p>Having the date a page was created or more usefully it was last updated seems a key thing to have. This is especially true where anything with computers is involved because things are changeing so quickly that things can soon go out of date. </p>
+
+</body>
+
+</html>

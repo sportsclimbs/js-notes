@@ -75,3 +75,9 @@ pre {
     color: #fff;
     border: solid 3px red;
 }
+
+#modified {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: right;
+}

@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/hidemenu.js"></script>
+    <script src="js/date.js" defer></script>
+
     <title>Page 6</title>
 
 </head>
@@ -16,12 +18,12 @@
         <ul>
             <li><a href="index.html">page 1</a></li>
             <li><a href="page2.html">page 2</a></li>
-            <li><a href="page3.html">page 3</a></li>
+            <li><a href="page3.html" title="Toggle switch">page 3</a></li>
             <li><a href="page4.html">page 4</a></li>
-            <li><a href="page5.html">page 5</a></li>
+            <li><a href="page5.html" title="Nodes and the DOM">page 5</a></li>
             <li><a href="#">page 6</a></li>
-            <li><a href="page7.html">page 7</a></li>
-            <li><a href="page8.html">page 8</a></li>
+            <li><a href="page7.html" title="Objects">page 7</a></li>
+            <li><a href="page8.html" title="Functions">page 8</a></li>
             <li><a href="page9.html">page 9</a></li>
             <li><a href="page10.html">page 10</a></li>
             <li><a href="links.html">Links</a></li>
@@ -29,97 +31,94 @@
     </nav>
     <div class="container">
 
-        <h1>Beginner’s Guide to Javascript</h1>
+        <p id="modified"></p>
+        <h1>Arrays</h1>
 
-        <div class="sub-h1">This is the <a href="https://www.youtube.com/watch?v=UOeofWla8mE">first video</a> by Guil
-            Hernandez</div>
-
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam vel corporis laboriosam rerum similique
-            reiciendis expedita veritatis.</p>
-
-        <div class="buttondiv" onclick="nameCheck();">Check in</div>
-        <div class="buttondiv" onclick="greet('hi there');">Greet me</div>
-
-        <div class="buttondiv" onclick="alert(person.name)">object alert name</div>
-        <div class="buttondiv" onclick="alert(person.age)">object alert age</div>
-        <p>REMEMBER the parentheses after the function name.</p>
-        <p>This didn't work at first. The error? forgot the quotes in the brackets.</p>
-
-        <pre class="language-js">
-function greet(greeting) {
-    let response = prompt('what yor name?');
-    alert(greeting + ", " + response + "!!");
-}
-
-greet('hi there');
-                    </pre>
-
-
-        <h2>Arrays</h2>
+        <h2>Basics</h2>
         <p>A variable can only hold one value. This is where arrays come in.</p>
 
-        <p>An array is like a variable but with square brackets and  commer separated list of values.</p>
+        <p>An array is like a variable but with square brackets and commer separated list of values.</p>
 
         <p><code class="language-js">var warWords = ['fight', 'bombs', 'spitfire', 'chimpanzee', 'melons']</code></p>
 
-        <p><code>warWords</code></p>
+        <p>Like variable to use an array you simply drop the <em>var</em> and just write: <code>warWords</code></p>
 
-        <h2>Objects</h2>
+        <p>In the console this will give:</p>
 
-        <p>Almost everything in Javascript is either an <em>object</em> or can be treated as one.</p>
+        <p><code>Array(5) [ "fight", "bombs", "spitfire", "chimpanzee", "melons" ]</code></p>
 
-        <p>Objects have properties and methods. Properties are like variables that belong to the object. Methods are something the object can do, or can be done to the object.</p>
+        <h2>Indexing</h2>
 
-        <p>Example:</p>
+        <p>If we want just one of the values from the array we can select it based on it's position in the array. This is known as it's <em>index</em>. To select the third value we use a 2 (because JS starts counting with a zero) in square brackets.</p>
 
-        <pre>var person = {
-            name: 'crap';
-            surname: 'Smith';
-            age: 32;
-            hair:  'brown';
-        };
-        </pre>
+        <p><code>warWords[2]</code> returns <code>"spitfire"</code> to the console.</p>
 
-        <p>To access a property of an object use dot notation:</p>
+        <p>If you want to know the index of a known value you type: <code>warWords.indexOf('bombs');</code></p>
 
-        <p><code>alert(person.name)</code></p>
+        <h2>Arrays within arrays</h2>
 
-        <h2>Loops</h2>
+        <p>Arrays can also hold arrays inside them:</p>
 
-        <p><code>warWords.forEach(function(warWord) {
-            alert(warWord);
-        })
-        </code></p>
+        <p><code>var planes = [['cessna', 'apache', 'learjet'],['spitfire', 'hurricane', 'F16'],['Jumbo Jet', 'Boeing 757', 'Airbus']]</code></p>
 
-        <script>
-            function nameCheck() {
-                let response = prompt('what yor name?');
-                alert("Hello " + response + "!!");
-            }
+        <p><strong>NOTE:</strong> each set of square brackets must still be separated by a comma.</p>
 
-            function greet(greeting) {
-                let response = prompt('what yor name?');
-                alert(greeting + ", " + response + "!!");
-            }
+        <p>To select an item the same square bracket notation is used to select the sub-array, then another square bracket is used to select the value within that array:</p>
 
-            var warWords = ['fight', 'bombs', 'spitfire', 'chimpanzee', 'melons'];
+        <p>Typing <code>planes[1][0]</code> gives <code>"spitfire"</code>, the first (0) value in the second(2) array.</p>
 
-            warWords.forEach(function(warWord) {
-            alert(warWord);
-        })
+        <h2>Using .length to count from the last item</h2>
 
-        // object example
+        <p><code>let floraSize = 'Trees are big';</code></p>
 
-        var person = {
-            name: 'crap',
-            surname: 'Smith',
-            age: 32,
-            hair:  'brown'
-        };
+        <p><code>floraSize.length;</code> will tell you how long the variable is. In this case 13 letters and spaces.</p>
 
+        <p><code>floraSize[4];</code> will tell you what the fifth letter is: <code>"s"</code></p>
 
-        </script>
-        <script src="js/prism.js"></script>
+        <p>Now lets create an array with sub arrays and see what happens.</p>
+
+        <p><code>let flora = [['oak', 'beech', 'elm'], ['roses', 'dasies', 'tulips'], ['beechrow', 'orange', 'pear']];</code></p>
+
+        <p>So <code>flora.length;</code> will return <code>3</code> which is the number of arrays.</p>
+        <p>To access that last array: <code>flora[flora.length -1];</code> will return the values of the last sub array: <code>Array(3) [ "beechrow", "orange", "pear" ]</code> which is the number of arrays.</p>
+        <p>To access that last array: <code>flora[flora.length -1][0];</code> will return the values of the last sub array: <code>"beechrow"</code>, the first value in the last array.</p>
+
+        <h2>How do we change the values of an array</h2>
+
+        <p>There are several methods to change array values.</p>
+
+        <p><code>myArray.pop()</code> will remove the last item.</p>
+
+    </div>
+
+    <script>
+    function nameCheck() {
+        let response = prompt('what yor name?');
+        alert("Hello " + response + "!!");
+    }
+
+    function greet(greeting) {
+        let response = prompt('what yor name?');
+        alert(greeting + ", " + response + "!!");
+    }
+
+    var warWords = ['fight', 'bombs', 'spitfire', 'chimpanzee', 'melons'];
+
+    warWords.forEach(function(warWord) {
+        alert(warWord);
+    })
+
+    // object example
+
+    var person = {
+        name: 'crap',
+        surname: 'Smith',
+        age: 32,
+        hair: 'brown'
+    };
+
+    </script>
+    <script src="js/prism.js"></script>
 </body>
 
 </html>

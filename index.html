@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
+    <script src="js/date.js" defer></script>
     <title>Index page</title>
     <style>
         </style>
@@ -18,14 +19,16 @@
             <ul>
                 <li><a href="#">page 1</a></li>
                 <li><a href="page2.html">page 2</a></li>
-                <li><a href="page3.html">page 3</a></li>
+                <li><a href="page3.html" title="Toggle switch">page 3</a></li>
                 <li><a href="page4.html">page 4</a></li>
-                <li><a href="page5.html">page 5</a></li>
-                <li><a href="page6.html">page 6</a></li>
+                <li><a href="page5.html" title="Nodes and the DOM">page 5</a></li>
+                <li><a href="page6.html" title="Arrays">page 6</a></li>
             </ul>
         </nav>
 
         <p>See also: <a href="LearnWebCode.html">Learn Web Code example</a> and the <a href="README.md">README.md</a> for a list of resources.</p>
+
+        <p id="modified"></p>
         <h1>Hellow Worldy</h1>
 
         <h2>Node JS</h2>
@@ -71,6 +74,15 @@ const interestRate = '0.3'; // a contant
 console.log(interestRate);
     </pre>
 
+    <h2>Operators</h2>
+
+    <p>If variables are Javascript's nouns <em>Operators</em> are it's verbs.</p>
+
+    <p>Examples are: + is used for addition and to combine strings<br>
+        = is used to assign variables<br>
+        == to test whether something is just like something else<br>
+        != not equal to something else</p>
+
         <h2>Objects</h2>
         <section class="coding">
             <div class="desc">
@@ -94,6 +106,10 @@ console.log(person.age);
             </div>
 
         </section>
+
+        <p>Javascript likes objects and there are number of built in objects such as <em>window</em> and <em>document</em></p>
+
+        <p>Objects have <em>properties</em>. Any named something in an object is a property.</p>
 
         <h2>Arrays</h2>
         <p>An array is a list of objects but an array is also an object itself.</p>
@@ -149,11 +165,27 @@ function greet(name, lastName) {
 }
         </pre>
 
+        <h3>Arguments vs Parameters</h3>
+
+        <p>The parameters are the aliases for the values that will be passed to the function. The arguments are the actual values.</p>
+
+        <pre>
+var foo = function( a, b, c ) {}; // a, b, and c are the parameters
+
+foo( 1, 2, 3 ); // 1, 2, and 3 are the arguments
+        </pre>
+
+        <p>(from a <a href="https://stackoverflow.com/questions/12874467/what-is-the-difference-between-arguments-and-parameters-in-javascript">Stack Overflow question</a></p>
+
+        <h2>Methods</h2>
+
+        <p>The DOM has many bulit in <em>methods</em>. A common one is <code>document.getElementById</code> This particular method is the fastest way to access something in the DOM. </p>
 
 
 
 
-        <p>Gettig tricky: <a href="https://youtu.be/W6NZfCO5SIk?t=2384">Mosh vid on functions</a></p>
+
+        <p>Getting tricky: <a href="https://youtu.be/W6NZfCO5SIk?t=2384">Mosh vid on functions</a></p>
     </div>
     <script src="index.js"></script>
     <script>

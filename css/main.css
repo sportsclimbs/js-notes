@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 2em;
+    margin-top: 2.3em;
     margin-bottom: 0;
 }
 h3 {
@@ -64,6 +64,7 @@ nav#topmenu li {
 
 nav#topmenu a {
     display: grid;
+    height: 100%;
     padding: .3em .2em;
     margin: auto;
     text-align: center;
@@ -118,6 +119,13 @@ pre {
     background: #fff;
     color: fuchsia;
     cursor: pointer;
+}
+
+#modified {
+    text-align: right;
+    font-style: italic;
+    font-size: .8em;
+    margin-top: 2em;
 }
 
 

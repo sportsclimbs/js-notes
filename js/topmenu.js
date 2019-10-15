@@ -1,7 +1,7 @@
-// Currently this file only works w page 5 because the CSS uses tha attribute selector href="#" to mark a button active.
+// Currently this file only works w page 5 because the CSS uses that attribute selector href="#" to mark a button active.
 // Need a way to get the file name and if the file name === href= name replace it with #. This might requre a loop.
 
-document.getElementById('topmenu').innerHTML = '<ul><li><a href="index.html">page 1</a></li><li><a href="page2.html">page 2</a></li><li><a href="page3.html">page 3</a></li><li><a href="page4.html">page 4</a></li><li><a href="#">page 5</a></li><li><a href="page6.html">page 6</a></li><li><a href="page7.html">page 7</a></li><li><a href="page8.html">page 8</a></li><li><a href="page9.html">page 9</a></li><li><a href="page10.html">page 10</a><li><a href="links.html">Links</a></li></li></ul>'
+document.getElementById('topmenu').innerHTML = '<ul><li><a href="index.html">page 1</a></li><li><a href="page2.html">page 2</a></li><li><a href="page3.html" title="Toggle switch">page 3</a></li><li><a href="page4.html">page 4</a></li><li><a href="#">page 5</a></li><li><a href="page6.html" title="Arrays">page 6</a></li><li><a href="page7.html" title="Objects">page 7</a></li><li><a href="page8.html" title="Functions">page 8</a></li><li><a href="page9.html">page 9</a></li><li><a href="page10.html">page 10</a><li><a href="links.html">Links</a></li></li></ul>'
 
 
 

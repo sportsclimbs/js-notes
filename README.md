@@ -10,6 +10,10 @@
 4. [Guru99](https://www.guru99.com/interactive-javascript-tutorials.html) is an absolute beginner’s guide. You can learn all the basics of JavaScript in aboutt 5 days
 5. [Wes Bos JS30 course](https://javascript30.com/) is not a complete beginner course but it is free. Build 30 things in 30 days.
 6. [Free Code Camp](https://learn.freecodecamp.org/) has many pages of examples and tests. Good way to learn.
+7. [Getting Started with Javascript (MDN)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics) is a good course by MDN.
+8. [The Odin Project’s Javascript Basics course](https://www.theodinproject.com/courses/web-development-101#javascript-basics) is a free open source JS course.
+9. [The Odin Project’s Javascript second course](https://www.theodinproject.com/courses/javascript?ref=lnav) is a free open source JS course.
+10. [Intro to JS](https://www.khanacademy.org/computing/computer-programming/programming#intro-to-programming) by the Khan academy looks like a fully featured free course.
 
 ---
 

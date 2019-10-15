@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/hidemenu.js"></script>
+    <script src="js/date.js" defer></script>
+    <title>Page 8</title>
+
+</head>
+
+<body class="p8">
+    <nav id="topmenu">
+        <ul>
+            <li><a href="index.html">page 1</a></li>
+            <li><a href="page2.html">page 2</a></li>
+            <li><a href="page3.html" title="Toggle switch">page 3</a></li>
+            <li><a href="page4.html">page 4</a></li>
+            <li><a href="page5.html" title="Nodes and the DOM">page 5</a></li>
+            <li><a href="page6.html" title="Arrays">page 6</a></li>
+            <li><a href="page7.html" title="Objects">page 7</a></li>
+            <li><a href="#">page 8</a></li>
+            <li><a href="page9.html">page 9</a></li>
+            <li><a href="page10.html">page 10</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+
+        <p id="modified"></p>
+
+        <h1>Functions</h1>
+
+        <button onclick="alert()">Alert box empty</button>
+
+        <h2>Syntax</h2>
+
+        <p>There are different ways to construct functions. Here are 3:</p>
+
+        <H3>1. The basic old skool (ie. not ES6) way:</H3>
+
+        <p>...the syntax is a bit like variable but:</p>
+        <ol>
+            <li>They start with <em>function</em> instead of <em></em>let, const or var</em>
+            </li>
+            <li>The name of the function is followed by parentheses: myFunction(). These may contain arguments inside.</li>
+            <li>Following the bracket are curly braces which contain all the code for the function.</li>
+            <li>Each statement inside the curly braces is separated by a semi-colon.</li>
+        </ol>
+
+        <p>Example:</p>
+
+        <pre>
+    function divide(x, y, z) {
+            let answer = x / y / z;
+            let txt = 'the answer is: ';
+            return txt + answer;
+    }
+        </pre>
+
+        <p>To run the above function just like a variable you omit the first word <em>function</em> and then put your numbers for x, y and z in the brackets separated by commas:</p>
+
+        <p><code>divide(5, 7, 181);</code></p>
+
+        <P>Which gives: <em>"the answer is: 0.003946329913180742"</em></P>
+
+        <h3>2. Anonymous Functions</h3>
+
+        <p>Writing functions this way means they don’t have a name, hence <em>anonymous</em>.</p>
+
+        <pre>document.querySelector('pre').onclick = function() {
+                alert('fuck off you moron');
+            }
+        </pre>
+
+        <p>The above code works on this page but only on the first &lt;pre&gt; element.</p>
+
+        <script>
+            document.querySelector('pre').onclick = function() {
+                alert('fuck off you moron');
+            }
+        </script>
+
+
+<h3>3. Arrow functions</h3>
+
+<p>These are a new way using <code>=></code> to represent a function.</p>
+
+
+
+
+
+
+
+
+        <script src="js/prism.js"></script>
+</body>
+
+</html>
