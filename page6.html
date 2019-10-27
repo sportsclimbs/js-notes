@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/hidemenu.js"></script>
     <script src="js/date.js" defer></script>
+    <script src="js/togglecontent.js" defer></script>
 
     <title>Page 6</title>
 
@@ -47,6 +48,15 @@
 
         <p><code>Array(5) [ "fight", "bombs", "spitfire", "chimpanzee", "melons" ]</code></p>
 
+        <button onclick="showBox()">The other way to write an array</button>
+
+        <div id="dropdownbox">
+
+            <p>Another way is using <em>new Array() like this:</em></p>
+            <p><code>let warWords = new Array('fight', 'bombs', 'spitfire', 'chimpanzee', 'melons');</code></p>
+            <p>However the first way is the preferred way.</p>
+        </div>
+
         <h2>Indexing</h2>
 
         <p>If we want just one of the values from the array we can select it based on it's position in the array. This is known as it's <em>index</em>. To select the third value we use a 2 (because JS starts counting with a zero) in square brackets.</p>
@@ -83,7 +93,41 @@
         <p>To access that last array: <code>flora[flora.length -1];</code> will return the values of the last sub array: <code>Array(3) [ "beechrow", "orange", "pear" ]</code> which is the number of arrays.</p>
         <p>To access that last array: <code>flora[flora.length -1][0];</code> will return the values of the last sub array: <code>"beechrow"</code>, the first value in the last array.</p>
 
-        <h2>How do we change the values of an array</h2>
+        <h2>How do we change the values of an array?<br>
+        pop, push, slice, splice and shift</h2>
+
+        <table>
+            <tr>
+                <th>method</th>
+                <th>What it does</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>pop</td>
+                <td>removes last item</td>
+                <td>.pop()</td>
+            </tr>
+            <tr>
+                <td>push</td>
+                <td>adds to array</td>
+                <td>push()</td>
+            </tr>
+            <tr>
+                <td>slice</td>
+                <td>umm</td>
+                <td>slice()</td>
+            </tr>
+            <tr>
+                <td>splice</td>
+                <td>umm</td>
+                <td>splce()</td>
+            </tr>
+            <tr>
+                <td>shift</td>
+                <td>umm</td>
+                <td>shift()</td>
+            </tr>
+        </table>
 
         <p>There are several methods to change array values.</p>
 

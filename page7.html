@@ -41,9 +41,9 @@
 
         <h1>Objects</h1>
 
- 
 
-       
+
+
 
         <p>Almost everything in Javascript is either an <em>object</em> or can be treated as one.</p>
 
@@ -51,17 +51,44 @@
 
         <p>Example:</p>
 
-        <pre>var person = {
-            name: 'crap';
-            surname: 'Smith';
-            age: 32;
-            hair:  'brown';
+        <pre>let person = {
+            name: 'crap',
+            surname: 'Smith',
+            age: 32,
+            hair:  'brown'
         };
         </pre>
+
+        <p>There are two ways to construct an object in JavaScript:</p>
+
+        <ol>
+            <li>The object literal, which uses curly braces (as above).</li>
+            <li>The object constructor, which uses the <em>new</em> keyword</li>
+        </ol>
+
+        <p>The first, object literal, method is the preferred.</p>
+
+        <p>Here's an object containing a function or <em>method</em></p>
+
+        <pre>let pig = { 
+    name: 'piggey', 
+    age: '30', 
+    colour: 'pink', 
+    greet: function() { alert('ho ho ho!') },
+    };</pre>
+
 
         <p>To access a property of an object use dot notation:</p>
 
         <p><code>alert(person.name)</code></p>
+
+        <p>This is important when you think about syntax like: </p>
+
+        <p><code>document.title</code> or</p>
+
+        <p><code>document.getElementById('h1')</code></p>
+
+        <p>These are objects too. Following the period is not necessarily a name(key). Objects also contain <em>methods</em> which are functions contained within an object. <a href="https://www.digitalocean.com/community/tutorials/understanding-objects-in-javascript">[More at Digital Ocean]</a> ?</p>
 
         <h2>Loops</h2>
 
@@ -70,6 +97,27 @@
         })
         </code></p>
         <script src="js/prism.js"></script>
+        <script>
+        let person = {
+            name: 'crap',
+            surname: 'Smith',
+            age: 32,
+            hair: 'brown'
+        };
+
+        </script>
+        <script>
+        let pig = {
+            name: 'piggey',
+            age: '30',
+            nosering: true,
+            colour: 'pink',
+            greet: function() {
+                alert('ho ho ho!')
+            },
+        };
+
+        </script>
 </body>
 
 </html>
